@@ -34,6 +34,143 @@ header{
   width: 3em;
   height: 2em;
 }
+/*section one*/
+.mainPicture{
+  background-image: url('/assets/images/image-web-3-mobile.jpg');
+  width: 100%;
+  height: 20em;
+  margin-top: 1.5em;
+}
+.mainTitle{
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1em;
+  margin: .5em 0;
+}
+.mainText{
+  color: var(--blue);
+  line-height: 2em;
+}
+.btn{
+  display: inline-block;
+  width: 12em;
+  text-align: center;
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  padding: 1em 0;
+  letter-spacing: 2px;
+  font-size: 1em;
+  text-decoration: none;
+}
+.btn:hover, .btn:focus{
+  background-color: var(--black);
+}
+/* aside */
+aside{
+  background-color: var(--black);
+  margin-top: 3em;
+  height: fit-content;
+  padding: 2em 1em;
+  font-size: 1em;
+}
+.asideTitle{
+  color: var(--orange);
+  margin: 0;
+  font-size: 2em;
+  font-weight: 800;
+}
+.news--container{
+  color: var(--white);
+  width: 100%;
+  padding: 1em 0;
+  border-bottom: solid 1px var(--white);
+}
+.news--container:last-child{
+  border-bottom: none;
+}
+.news--title{
+  color: var(--white);
+  text-decoration: none;
+}
+.news--title:hover{
+  color: var(--orange);
+}
+.news--text{
+  color: var(--gray);
+}
+/*trending section*/
+.trending{
+  margin-top: 2em;
+}
+.trending--container{
+  display: flex;
+  height: 9em;
+  align-items: center;
+  margin: 2em 0;
+}
+.trending--image{
+  width: 6em;
+  height: 100%;
+}
+.trending--info{
+  padding-left: 1em;
+}
+.trending--number{
+  font-weight: 800;
+  font-size: 3em;
+  color: var(--gray);
+}
+.trending--info > h3{
+  margin: .5em 0;
+}
+.trending--title{
+  color: var(--black);
+  text-decoration: none;
+}
+.trending--title:hover{
+  color: var(--red);
+}
+.trending--text{
+  margin: 0;
+  color: var(--gray);
+  line-height: 1.3em;
+}
+/*responsive design*/
+@media screen and (min-width: 820px) {
+  .mainPicture{
+    background-image: url('/assets/images/image-web-3-desktop.jpg');
+  }
+}
+@media screen and (min-width: 1024px) {
+  section,.cols-2{
+    display: flex;
+    gap: 5%;
+  }
+  .mainTitle{
+    width: 45%;
+  }
+  .textContainer{
+    width: 50%;
+  }
+  .mainPicture, aside{
+    margin-top: 0;
+  }
+  article{
+    width: 65%;
+  }
+  aside{
+    width: 30%;
+  }
+  .trending{
+    display: flex;
+    justify-content: space-between;
+  }
+  .trending--container{
+    width: 32%;
+    height: 9em;
+  }
+}
 @media screen and (min-width: 1280px) {
   .container{
     width: 70em;

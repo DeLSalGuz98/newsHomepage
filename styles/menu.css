@@ -54,6 +54,9 @@
   display: none;
 }
 @media screen and (min-width: 820px) {
+  header{
+    margin-bottom: 2em;
+  }
   .movileMenu{
     display: none;
   }
@@ -65,7 +68,7 @@
   }
   .desktopMenu--itemContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 30em;
   }
   .desktopMenu--itemContainer > li{
